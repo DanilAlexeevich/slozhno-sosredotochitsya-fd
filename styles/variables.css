@@ -1,4 +1,42 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root{
+  --main-font-family: 'IBM Plex mono';
+  --cover-image: url("../images/cover-image-dark.png");
+  --accent-color: #FF0070;
+  --header-button-color: #FF0070;
+  --hover-color: 255, 0, 112;
+  --text-color:#000028;
+  --bg-color: #000028;
+  --title-color: #DB00FF;
+  --main-text-color: #F1B2CE;
+  --main-font-size: 18px;
+  --decorate-color: #FF0070;
+  --spacing-xs: 10px;
+  --spacing-sm: 20px;
+  --spacing-md: 30px;
+  --spacing-lg: 40px;
+  --spacing-xl: 50px;
+  --spacing-2xl: 80px;
+  --decor-size: 25px;
+  --rec-dot-size: 9px;
+  --main-line-height: 23.4px;
+
+  --font-size-medium: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --cover-image: url("../images/cover-image-light.png");
+    --accent-color: #FF8DCB;
+    --header-button-color: #353430;
+    --hover-color: 53, 52, 48;
+    --text-color: #353430;
+    --bg-color: #FFF1F7;
+    --title-color: #FFC2E6;
+    --main-text-color: #353430;
+    --decorate-color: #353430;
+  }
+  .theme-auto .rec-decor {
+    display: none;
+  }
+}
