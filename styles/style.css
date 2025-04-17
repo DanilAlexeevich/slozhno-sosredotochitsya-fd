@@ -1,7 +1,7 @@
 .page {
   background-image: var(--cover-image);
   background-attachment: fixed;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-color: var(--bg-color);
 }
@@ -38,7 +38,9 @@
 .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
   border: 1px solid rgba(var(--hover-color), 0.4);
 }
-.header__theme-menu-button:not(.header__theme-menu-button_active):focus-visible {
+.header__theme-menu-button:not(
+    .header__theme-menu-button_active
+  ):focus-visible {
   text-decoration: underline;
   text-underline-offset: 3px;
   outline: none;
@@ -71,8 +73,8 @@
   font-size: 18px;
   line-height: 25px;
   color: var(--accent-color);
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .rec-decor::before {
@@ -147,7 +149,7 @@
 }
 
 .text-link__content::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -195,11 +197,10 @@
   color: var(--text-color);
   background-color: var(--accent-color);
   font-weight: 400;
-  
 }
 
 .text-block__content {
-  color: var(--main-text-color);   
+  color: var(--main-text-color);
 }
 
 .advices .text-block__title {
@@ -283,8 +284,8 @@
     bottom: var(--spacing-sm);
     left: var(--spacing-sm);
   }
-  
-  .decorated-zone::after { 
+
+  .decorated-zone::after {
     top: var(--spacing-sm);
     right: var(--spacing-sm);
   }
@@ -327,12 +328,12 @@
     display: grid;
     column-gap: var(--spacing-sm);
     row-gap: var(--spacing-sm);
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: auto auto auto; 
-    grid-template-areas: 
-      'sunset sunset ice-cream'
-      'tape books ice-cream'
-      'tape street street';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "sunset sunset ice-cream"
+      "tape books ice-cream"
+      "tape street street";
   }
 
   .galery__item.sunset {
